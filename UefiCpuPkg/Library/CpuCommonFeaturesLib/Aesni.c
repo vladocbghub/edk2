@@ -123,7 +123,7 @@ AesniInitialize (
         MSR_SANDY_BRIDGE_FEATURE_CONFIG,
         MSR_SANDY_BRIDGE_FEATURE_CONFIG_REGISTER,
         Bits.AESConfiguration,
-        BIT1 | ((State) ? 0 : BIT0)
+        BIT0 | ((State) ? 0 : BIT1)
         );
     }
   }
